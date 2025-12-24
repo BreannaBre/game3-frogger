@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://7b06ytg06sap"]
+
+[ext_resource type="Script" uid="uid://h1kq2cqtouri" path="res://Scripts/frog.gd" id="1_f0apl"]
+[ext_resource type="Texture2D" uid="uid://ojrfo6skqpp5" path="res://icon.svg" id="2_dc3jl"]
+
+[node name="Frog" type="CharacterBody2D"]
+position = Vector2(588, 333)
+motion_mode = 1
+script = ExtResource("1_f0apl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+
+[node name="TempSprite" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_dc3jl")
