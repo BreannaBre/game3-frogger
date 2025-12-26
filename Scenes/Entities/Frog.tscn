@@ -1,7 +1,27 @@
-[gd_scene load_steps=3 format=3 uid="uid://7b06ytg06sap"]
+[gd_scene load_steps=5 format=3 uid="uid://7b06ytg06sap"]
 
 [ext_resource type="Script" uid="uid://h1kq2cqtouri" path="res://Scripts/frog.gd" id="1_f0apl"]
-[ext_resource type="Texture2D" uid="uid://ojrfo6skqpp5" path="res://icon.svg" id="2_dc3jl"]
+[ext_resource type="Texture2D" uid="uid://banmjv8tksvl1" path="res://Sprites/Frog_Sprites/frog_frame0001.png" id="2_dc3jl"]
+[ext_resource type="Texture2D" uid="uid://d22cx4vuid7" path="res://Sprites/Frog_Sprites/frog_frame0000.png" id="3_qk4p7"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5mb4n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_dc3jl")
+}],
+"loop": true,
+"name": &"Hopping",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_qk4p7")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
 
 [node name="Frog" type="CharacterBody2D"]
 position = Vector2(588, 333)
@@ -9,7 +29,6 @@ motion_mode = 1
 script = ExtResource("1_f0apl")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-
-[node name="TempSprite" type="Sprite2D" parent="."]
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("2_dc3jl")
+position = Vector2(-464, -221)
+sprite_frames = SubResource("SpriteFrames_5mb4n")
+animation = &"Hopping"

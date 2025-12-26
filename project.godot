@@ -14,3 +14,10 @@ config/name="Game#3: My Frogger"
 run/main_scene="uid://2y530ee55cth"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=256
+window/size/viewport_height=224
+window/stretch/mode="viewport"
+window/stretch/scale_mode="integer"
