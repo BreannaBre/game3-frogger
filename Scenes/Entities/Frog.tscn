@@ -24,11 +24,9 @@ animations = [{
 }]
 
 [node name="Frog" type="CharacterBody2D"]
-position = Vector2(588, 333)
 motion_mode = 1
 script = ExtResource("1_f0apl")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-464, -221)
 sprite_frames = SubResource("SpriteFrames_5mb4n")
 animation = &"Hopping"

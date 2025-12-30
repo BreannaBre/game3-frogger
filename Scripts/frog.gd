@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @onready var animatedsprite = $AnimatedSprite2D
 
-const tile_size = 32
+const tile_size = 16
 var input_dir: Vector2
 var moving = false
 # used this video for grid-based movement reference: 
