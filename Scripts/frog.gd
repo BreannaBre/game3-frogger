@@ -2,9 +2,12 @@ extends CharacterBody2D
 
 @onready var animatedsprite = $AnimatedSprite2D
 
+signal landed(landed_position: Vector2)
+
 const tile_size = 16
 var input_dir: Vector2
 var moving = false
+var death_happening = false
 # used this video for grid-based movement reference: 
 # https://youtu.be/8tDcJEbQnW0?si=0sO_DBvVuNA97iRi
 func _physics_process(_delta: float) -> void:
@@ -36,6 +39,7 @@ func move():
 			tween.tween_property(self, "position", position + input_dir*tile_size, 0.1)
 			tween.tween_callback(move_false)
 			tween.tween_callback(change_to_idle)
+			tween.tween_callback(emit_land)
 		
 func move_false() -> void:
 	moving = false
@@ -43,8 +47,15 @@ func move_false() -> void:
 func change_to_idle() -> void:
 	animatedsprite.animation = "Idle"
 
+func emit_land() -> void:
+	landed.emit(global_position)
+
 func set_frog_alignment(flip_h, flip_v, rotate_anount) -> void:
 		animatedsprite.flip_h = flip_h
 		animatedsprite.flip_v = flip_v
 		animatedsprite.rotation_degrees = rotate_anount
-	
+
+func water_death():
+	animatedsprite.play("Water_death")
+	await animatedsprite.animation_finished
+	self.queue_free()

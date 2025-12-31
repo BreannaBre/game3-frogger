@@ -1,8 +1,32 @@
-[gd_scene load_steps=5 format=3 uid="uid://7b06ytg06sap"]
+[gd_scene load_steps=29 format=3 uid="uid://7b06ytg06sap"]
 
 [ext_resource type="Script" uid="uid://h1kq2cqtouri" path="res://Scripts/frog.gd" id="1_f0apl"]
 [ext_resource type="Texture2D" uid="uid://banmjv8tksvl1" path="res://Sprites/Frog_Sprites/frog_frame0001.png" id="2_dc3jl"]
 [ext_resource type="Texture2D" uid="uid://d22cx4vuid7" path="res://Sprites/Frog_Sprites/frog_frame0000.png" id="3_qk4p7"]
+[ext_resource type="Texture2D" uid="uid://by4cmdiioschc" path="res://Sprites/Frog_Sprites/WaterDeath/w_death_frame0000.png" id="4_eyga2"]
+[ext_resource type="Texture2D" uid="uid://brkl1pvth6ocx" path="res://Sprites/Frog_Sprites/WaterDeath/w_death_frame0001.png" id="5_u34tm"]
+[ext_resource type="Texture2D" uid="uid://djdeee5sumlka" path="res://Sprites/Frog_Sprites/WaterDeath/w_death_frame0002.png" id="6_7anu3"]
+[ext_resource type="Texture2D" uid="uid://qygi7wyf18r2" path="res://Sprites/Frog_Sprites/WaterDeath/w_death_frame0003.png" id="7_4ejg7"]
+[ext_resource type="Texture2D" uid="uid://b6aegj5jfeixm" path="res://Sprites/Frog_Sprites/WaterDeath/w_death_frame0004.png" id="8_fmkc2"]
+[ext_resource type="Texture2D" uid="uid://1fkaew4vovoj" path="res://Sprites/Frog_Sprites/WaterDeath/w_death_frame0005.png" id="9_i2m4o"]
+[ext_resource type="Texture2D" uid="uid://bjnaeamx4kev5" path="res://Sprites/Frog_Sprites/WaterDeath/w_death_frame0006.png" id="10_04buf"]
+[ext_resource type="Texture2D" uid="uid://cxaaf5ng5yjoa" path="res://Sprites/Frog_Sprites/WaterDeath/w_death_frame0007.png" id="11_601u6"]
+[ext_resource type="Texture2D" uid="uid://cetg3q2lidwri" path="res://Sprites/Frog_Sprites/WaterDeath/w_death_frame0008.png" id="12_ukrid"]
+[ext_resource type="Texture2D" uid="uid://g18u4aghjhh6" path="res://Sprites/Frog_Sprites/WaterDeath/w_death_frame0009.png" id="13_6e4ao"]
+[ext_resource type="Texture2D" uid="uid://dc6jewhbfbi4f" path="res://Sprites/Frog_Sprites/WaterDeath/w_death_frame0010.png" id="14_ii02d"]
+[ext_resource type="Texture2D" uid="uid://d075ixp3gtepk" path="res://Sprites/Frog_Sprites/WaterDeath/w_death_frame0011.png" id="15_teojd"]
+[ext_resource type="Texture2D" uid="uid://c154qsfoooua8" path="res://Sprites/Frog_Sprites/WaterDeath/w_death_frame0012.png" id="16_m2vcg"]
+[ext_resource type="Texture2D" uid="uid://dqij25m23np81" path="res://Sprites/Frog_Sprites/WaterDeath/w_death_frame0013.png" id="17_1wc3s"]
+[ext_resource type="Texture2D" uid="uid://b7bjt78l20ybh" path="res://Sprites/Frog_Sprites/WaterDeath/w_death_frame0014.png" id="18_rd7th"]
+[ext_resource type="Texture2D" uid="uid://dkthtihksy7bt" path="res://Sprites/Frog_Sprites/WaterDeath/w_death_frame0015.png" id="19_vpo17"]
+[ext_resource type="Texture2D" uid="uid://dm823p2soq8f4" path="res://Sprites/Frog_Sprites/WaterDeath/w_death_frame0016.png" id="20_7v6ua"]
+[ext_resource type="Texture2D" uid="uid://c17qukpx138wd" path="res://Sprites/Frog_Sprites/WaterDeath/w_death_frame0017.png" id="21_3lcmt"]
+[ext_resource type="Texture2D" uid="uid://cdf7ptfyhqwt7" path="res://Sprites/Frog_Sprites/WaterDeath/w_death_frame0018.png" id="22_vypy1"]
+[ext_resource type="Texture2D" uid="uid://db5rtde5eitvw" path="res://Sprites/Frog_Sprites/WaterDeath/w_death_frame0019.png" id="23_5ne4a"]
+[ext_resource type="Texture2D" uid="uid://dhgcm2o8g6ebm" path="res://Sprites/Frog_Sprites/WaterDeath/w_death_frame0020.png" id="24_x0cua"]
+[ext_resource type="Texture2D" uid="uid://cocgn0v7fwu72" path="res://Sprites/Frog_Sprites/WaterDeath/w_death_frame0021.png" id="25_laorp"]
+[ext_resource type="Texture2D" uid="uid://bgu6ylk5c7s3x" path="res://Sprites/Frog_Sprites/WaterDeath/w_death_frame0022.png" id="26_htf12"]
+[ext_resource type="Texture2D" uid="uid://ba5qhdibaxjes" path="res://Sprites/Frog_Sprites/WaterDeath/w_death_frame0023.png" id="27_mh8cj"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_5mb4n"]
 animations = [{
@@ -21,6 +45,83 @@ animations = [{
 "loop": true,
 "name": &"Idle",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_eyga2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_u34tm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_7anu3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_4ejg7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_fmkc2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_i2m4o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_04buf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_601u6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ukrid")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_6e4ao")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_ii02d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_teojd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_m2vcg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_1wc3s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_rd7th")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_vpo17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_7v6ua")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_3lcmt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_vypy1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_5ne4a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_x0cua")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_laorp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_htf12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_mh8cj")
+}],
+"loop": false,
+"name": &"Water_death",
+"speed": 20.0
 }]
 
 [node name="Frog" type="CharacterBody2D"]
@@ -29,4 +130,4 @@ script = ExtResource("1_f0apl")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_5mb4n")
-animation = &"Hopping"
+animation = &"Water_death"
