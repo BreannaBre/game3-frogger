@@ -21,3 +21,8 @@ window/size/viewport_width=240
 window/size/viewport_height=208
 window/stretch/mode="viewport"
 window/stretch/scale_mode="integer"
+
+[layer_names]
+
+2d_physics/layer_1="Frog Layer"
+2d_physics/layer_2="Car Layer"

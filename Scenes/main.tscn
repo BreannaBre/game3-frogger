@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=4 uid="uid://2y530ee55cth"]
+[gd_scene load_steps=7 format=4 uid="uid://2y530ee55cth"]
 
 [ext_resource type="Script" uid="uid://cemg77ks6empf" path="res://Scenes/main.gd" id="1_8gbba"]
 [ext_resource type="Texture2D" uid="uid://cmdpo3qm83qkx" path="res://Sprites/PlaceholderTilemap.png" id="1_jjgbg"]
 [ext_resource type="PackedScene" uid="uid://7b06ytg06sap" path="res://Scenes/Entities/Frog.tscn" id="2_bo1nx"]
+[ext_resource type="PackedScene" uid="uid://cpbk2o2nh0nqi" path="res://Scenes/Entities/car.tscn" id="4_jjvhh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bo1nx"]
 texture = ExtResource("1_jjgbg")
@@ -26,3 +27,7 @@ tile_set = SubResource("TileSet_8gbba")
 
 [node name="Frog" parent="." instance=ExtResource("2_bo1nx")]
 position = Vector2(120, 200)
+
+[node name="Car" parent="." instance=ExtResource("4_jjvhh")]
+position = Vector2(54.000008, 140.99997)
+scale = Vector2(0.2, 0.2)
