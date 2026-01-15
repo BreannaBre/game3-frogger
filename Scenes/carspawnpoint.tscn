@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://6thjg4e7s6pi"]
+
+[ext_resource type="Script" uid="uid://bqm72glxu5f2p" path="res://Scripts/car_spawn_point.gd" id="1_vdc1r"]
+
+[node name="CarSpawnPoint" type="Node2D"]
+position = Vector2(9, 83)
+script = ExtResource("1_vdc1r")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true

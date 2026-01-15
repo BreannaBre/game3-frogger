@@ -41,8 +41,9 @@ func _physics_process(_delta: float) -> void:
 			move()
 		move_and_slide()
 
+# check if frog was hit by a car
 func _on_area_entered(area) -> void:
-	if area.name == "Car":
+	if area.is_in_group("Cars"):
 		respawn()
 
 func move():

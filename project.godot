@@ -26,3 +26,4 @@ window/stretch/scale_mode="integer"
 
 2d_physics/layer_1="Frog Layer"
 2d_physics/layer_2="Car Layer"
+2d_physics/layer_3="car boundary"
