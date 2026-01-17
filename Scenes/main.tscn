@@ -12,10 +12,13 @@ size = Vector2(20, 112)
 texture = ExtResource("2_jjvhh")
 0:0/0 = 0
 1:0/0 = 0
+1:0/0/custom_data_0 = true
 2:0/0 = 0
 3:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_21xkr"]
+custom_data_layer_0/name = "is_water"
+custom_data_layer_0/type = 1
 sources/0 = SubResource("TileSetAtlasSource_kry3j")
 
 [node name="Main" type="Node" groups=["Cars"]]
@@ -39,3 +42,15 @@ position = Vector2(120, 200)
 
 [node name="CarSpawnPoint" parent="." instance=ExtResource("5_kry3j")]
 position = Vector2(-8, 184)
+
+[node name="CarSpawnPoint2" parent="." instance=ExtResource("5_kry3j")]
+position = Vector2(-8, 168)
+
+[node name="CarSpawnPoint3" parent="." instance=ExtResource("5_kry3j")]
+position = Vector2(-8, 152)
+
+[node name="CarSpawnPoint4" parent="." instance=ExtResource("5_kry3j")]
+position = Vector2(-8, 136)
+
+[node name="CarSpawnPoint5" parent="." instance=ExtResource("5_kry3j")]
+position = Vector2(-8, 120)

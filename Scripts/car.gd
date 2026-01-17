@@ -18,5 +18,4 @@ func _physics_process(delta: float) -> void:
 
 func _on_area_entered(area) -> void:
 	if area.name == "CarStoppingPoint":
-		print("leaving!")
 		self.queue_free()

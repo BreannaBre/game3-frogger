@@ -10,5 +10,5 @@ func _on_frog_landed(pos: Vector2):
 	var tile_position = tiles.local_to_map(tiles.to_local(pos))
 	var data = tiles.get_cell_tile_data(tile_position)
 	
-	if data and data.get_custom_data("isWater"):
+	if data and data.get_custom_data("is_water"):
 		frog.water_death()
