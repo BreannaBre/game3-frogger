@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @onready var animatedsprite = $AnimatedSprite2D
-@onready var area2d = $Area2D
+@onready var area2d = $FrogArea
 
 signal landed(landed_position: Vector2)
 

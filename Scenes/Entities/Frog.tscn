@@ -135,9 +135,9 @@ script = ExtResource("1_f0apl")
 sprite_frames = SubResource("SpriteFrames_5mb4n")
 animation = &"Water_death"
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="FrogArea" type="Area2D" parent="."]
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FrogArea"]
 scale = Vector2(0.7, 0.7)
 shape = SubResource("RectangleShape2D_eyga2")
